@@ -1,0 +1,36 @@
+.services {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-top: 15px;
+  .card {
+    width: 730px;
+
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img {
+      padding: 15px 22px;
+      border-radius: 50%;
+    }
+    .card-content {
+    @include flexbox;
+      width: 100%;
+      padding-right: 20px;
+      .service {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        .duration {
+          color: #7777;
+        }
+      }
+      .price{
+        color:#53d56c ;
+      }
+    }
+  }
+}

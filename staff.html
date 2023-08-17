@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="booking-panel">
+      <!-- LEFT-BAR -->
+      <div id="left-bar">
+        <div class="container">
+          <div class="left-bar">
+            <div class="staff-link">
+              <div class="number">
+                <div class="num">1</div>
+              </div>
+              <a href="./staff.html" class="staff-link">Staff</a>
+            </div>
+            <div class="service-link">
+              <div class="number">
+                <div class="num">1</div>
+
+              </div>
+              <a href="./service.html" class="service-link">Service</a>
+            </div>
+            <div class="date-time-link">
+              <div class="number">
+                <div class="num">1</div>
+
+              </div>
+              <a href="./date-time.html" class="date-time-link">Date & Time</a>
+            </div>
+            <div class="confirmation-link">
+              <div class="number">
+                <div class="num">1</div>
+
+              </div>
+              <a href="./confirmation.html" class="confirm-link"
+                >Confirmation</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="right-content">
+        <!-- Title -->
+        <div id="title">
+          <div class="container">
+            <div class="title">
+              <p>Select Staff</p>
+              <img src="./assets/img/Combined Shape.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- STAFF -->
+        <div id="booking-content">
+          <div class="container">
+            <div class="booking-content">
+              <div class="staff"></div>
+              <div class="services" style="display: none"></div>
+              <div class="date-time" style="display: none">
+                <div class="calendar">
+                  <div class="header">
+                    <button id="prev" class="button">
+                      <img
+                        src="./assets/img/iconamoon_arrow-up-2 (1).png"
+                        alt=""
+                      />
+                    </button>
+                    <p id="month-year"></p>
+                    <button id="next" class="button">
+                      <img src="./assets/img/iconamoon_arrow-up-2.png" alt="" />
+                    </button>
+                  </div>
+                  <div class="days-header">
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tue</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thu</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                  </div>
+                  <div class="days-grid" id="days-grid"></div>
+                </div>
+                <div class="time">
+                  <div class="header">Time</div>
+                  <div class="select-date">Select date</div>
+                  <div class="date">
+                    <div class="first-date">
+                      <p>09:00</p>
+                      <p>09:30</p>
+                    </div>
+                    <div class="second-date">
+                      <p>09:30</p>
+                      <p>10:00</p>
+                    </div>
+                    <div class="third-date">
+                      <p>10:00</p>
+                      <p>10:30</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="note" style="display: none">
+                <div class="header">
+                  <p>Note</p>
+                </div>
+                <div class="note-content"></div>
+              </div>
+
+              <!-- Modal -->
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div class="modal-text">
+                    <p>This is a basic modal window.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Notification -->
+        <div id="notification">
+          <div class="notification">
+            <img src="./assets/img/error.jpg" alt="" />
+            <p class="notification-message"></p>
+          </div>
+        </div>
+        <!-- bottom-bar -->
+        <div id="bottom-bar">
+          <div class="container">
+            <div class="bottom-bar" style="justify-content: flex-end;">
+              <a href="" class="next">Next</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/main.js"></script>
+</html>

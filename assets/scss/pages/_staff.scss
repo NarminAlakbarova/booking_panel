@@ -1,0 +1,37 @@
+.staff {
+  padding-left: 30px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  .card {
+    width: 730px;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img {
+      padding: 15px 22px;
+      border-radius: 50%;
+    }
+    .person-info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      .person-name {
+        color: #292d32;
+        font-size: 14px;
+        font-weight: 500;
+        word-wrap: break-word;
+      }
+      .person-email {
+        color: #828f9a;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 19px;
+        word-wrap: break-word;
+      }
+    }
+  }
+}

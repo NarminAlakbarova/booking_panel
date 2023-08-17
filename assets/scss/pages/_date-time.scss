@@ -1,0 +1,105 @@
+.date-time {
+  display: flex;
+  column-gap: 15px;
+  justify-content: center;
+  padding-top: 32px;
+  .calendar {
+    width: 370px;
+    height: 290px;
+    .header {
+      @include flexbox(center);
+      padding: 10px;
+      background-color: transparent;
+      font-size: 14px;
+      font-weight: 400;
+      column-gap: 21px;
+
+      .button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+    .days-header {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      background-color: white;
+      text-align: center;
+      font-weight: bold;
+      border-bottom: 1px solid rgba(227, 234, 243, 1);
+      padding: 5px;
+      .day {
+        padding: 10px;
+        color: rgba(170, 172, 175, 1);
+        font-size: 13px;
+        font-weight: 400;
+      }
+    }
+    .days-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 6px;
+      background-color: white;
+      padding: 11px 10px 6px;
+    }
+
+    .day-cell {
+      padding: 11px;
+      text-align: center;
+      background-color: #c8c9cc;
+      border: none;
+      cursor: pointer;
+      &.active {
+        color: black;
+      }
+      &.inactive {
+        color: #aaacaf;
+        pointer-events: none;
+      }
+    }
+
+    .day-cell:hover {
+      background-color: #f0f0f0;
+    }
+  }
+  .time {
+    margin-top: 7px;
+    width: 305px;
+    height: 280px;
+    .header {
+      padding: 10px;
+      @include flexbox(center);
+    }
+    .select-date {
+      background-color: white;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      border-bottom: 1px solid rgba(227, 234, 243, 1);
+      color: #6c70dc;
+    }
+    .date {
+      background-color: white;
+      height: 240px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      column-gap: 10px;
+      padding-top: 12px;
+      & > div {
+        width: 85px;
+        height: 55px;
+        padding: 7px 21px;
+        background-color: #c8c9cc;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+}

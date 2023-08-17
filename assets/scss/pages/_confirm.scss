@@ -1,0 +1,57 @@
+form {
+  padding-top: 25px;
+
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    .form-group {
+      flex-basis: calc(50% - 5px);
+      margin-bottom: 25px;
+      label {
+        display: block;
+        padding-bottom: 9px;
+        color: #292d32;
+        span {
+          color: #ef264d;
+        }
+      }
+      input {
+        width: 365px;
+        height: 46px;
+        border: 1px solid rgba(227, 234, 243, 1);
+      }
+    }
+  }
+}
+.note {
+  padding-left: 30px;
+  .header {
+    padding-bottom: 9px;
+  }
+  .note-content {
+    width: 740px;
+    height: 140px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 19px;
+    padding-left: 26px;
+    row-gap: 8px;
+    border: 1px solid rgba(227, 234, 243, 1);
+
+    .note-group {
+      p {
+        font-weight: 500;
+        span {
+          padding-right: 12px;
+          color: #6c70dc;
+        }
+      }
+      .price {
+        color: #4fbf65;
+      }
+    }
+  }
+}

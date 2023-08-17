@@ -1,0 +1,28 @@
+#notification {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  display: none;
+  z-index: 8888;
+  &.display {
+    display: block;
+  }
+  &.active {
+    display: block;
+  }
+  .notification {
+    @include flexbox(center);
+    padding: 9px 14px;
+    height: 42px;
+    background-color: #f4be6c;
+    color: white;
+    column-gap: 10px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}

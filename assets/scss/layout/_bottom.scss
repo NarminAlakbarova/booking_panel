@@ -1,0 +1,21 @@
+#bottom-bar {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 80.8%;
+
+  &::before {
+    content: "";
+    display: block;
+    background-color: #e3eaf3;
+    width: 100%;
+    height: 3px;
+  }
+
+  .bottom-bar {
+    width: 100%;
+    height: 75px;
+    padding: 0 20px;
+    @include flexbox;
+  }
+}

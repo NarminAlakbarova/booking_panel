@@ -1,0 +1,20 @@
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+body {
+  background: linear-gradient(rgba(142, 83, 228, 1), rgba(75, 34, 185, 1));
+  @include flexbox(center);
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.booking-panel {
+  display: flex;
+  width: 980px;
+  position: relative;
+  height: 560px;
+}
+
+.right-content {
+  position: relative;
+}
