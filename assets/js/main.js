@@ -364,12 +364,10 @@ const drawModalContent = (content, color) => {
 
 closeModalBtn.addEventListener("click", () => {
   modal.style.display = "none";
-  window.location = "staff.html";
 });
 
 window.addEventListener("click", (e) => {
   if (e.target === modal) {
     modal.style.display = "none";
-    window.location = "staff.html";
   }
 });
